@@ -14,6 +14,8 @@ import com.android.volley.Request.Method;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.immense.flour.AppConfig;
+import com.immense.flour.LoginActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -21,7 +23,11 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.immense.flour.R;
 
+import com.immense.flour.AppController;
+import com.immense.flour.SQLiteHandler;
+import com.immense.flour.SessionManager;
 
 public class RegisterActivity extends Activity {
     private static final String TAG = RegisterActivity.class.getSimpleName();
